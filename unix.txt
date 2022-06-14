@@ -1,0 +1,146 @@
+What is hardware
+Phyical component which we can see, touch or feel is called hardware.
+
+What is software
+Software refers to a program or set of instruction and application 
+used to manage and control various functions of a computer is called software.
+
+Types of software 
+1)application software
+2)system software
+
+Application software perfroms information processing task for end users.
+eg word,excel, c++ etc
+ 
+
+System software manage and support operation of computer it is basically two types
+1)operating system
+2)System utilities
+
+Utility software is used to perform basic maintence task on a computer
+
+1)disk cleanup
+Disk cleanup allows for you to scan your entire hard disk drive to serach  extra room by deleting any unnecessary files
+ from the internet and cookies.
+
+2)Disk Fragramenters
+The main function of the disk fragramenters is to reassemble fragramented files. Designed to increase access speed 
+by rearranging files stored on a disk to occupy contigous storage
+
+3)disk compressor and Archivers
+Disk compressor is a type of function that a program to serach your hard driv and compress file particulars old
+or unused files. This greatly improves your compters functionality and performance because it does not have
+ to keep track of many files.
+
+4)System restore
+System restore is great for fixing problems that a virus has caused after you use antivirus software to rid your
+ computer of the malware.
+
+5) Registery cleaners 
+Registry cleaners are  programmers that allow for you to scan your computer for any errors in the registery which is a
+ collection
+of the core computer files that are essential to performance and functionality and repairs them if needed.
+
+6)File Splitters
+are programs that allow you to break a file into smaller pieces in order to store or send files.
+
+functions of os
+1)file management
+2)memory management
+3)I/O system management
+4)command interpreter system
+5)program execution
+6)file system management communication
+7)protection system
+8)networking
+
+
+broadly divide into 
+memory management
+security
+multitasking
+peripheral management
+
+What is unix
+Unix is CLI(command line interface) operating system
+
+features of unix
+1)mutiuser capaability
+2)multiprogramming
+3)portability
+4)security
+5)machine independent
+6)strong networking support
+7)unix shell programming
+8)pipes and filters
+
+
+basic unix commands
+who
+whoami
+date
+cal
+pwd
+ls
+ls-l
+ for zooming $ ctrl ++
+
+cd 
+cd ..
+cd home
+man ls
+man cd
+man date
+cat > filename  (create a file) > standard output redirectional operator
+cat < filename  (display the file not necessary to use <)  standard input redirectional operator
+cat >> filename  (append the file)
+ctrl+d used to save and exit from the file
+
+man cat
+
+unix is case senstative
+command should start with alphabet and with lower case and special symbols and commands are reserved words
+date +%a
+date +%A
+date +b
+date +B
+man date
+date +%y
+date +%Y
+date +%T
+date +%F
+cal
+cal -j
+who -d
+who - b
+file * will show the empty files
+cd ~  defualt directory
+cd -  current directory
+cd ../..  this will come out from two dirctories
+mkdir
+
+vi file1.txt
+aaa
+:wq
+
+
+
+
+ 
+# super user(administrator) prompt  su - passwword 
+# su - oracle
+$ su - password
+
+$ normal user prompt
+
+$ whoami
+oracle
+
+$ su - password
+
+                                       
+
+
+
+
+

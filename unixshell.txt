@@ -1,0 +1,245 @@
+Collection of unix commands is called shell scripts
+Some time one command or 2 or 3 command is not sufficient. We have to run collection of commands then use shell
+script
+
+.sh files
+
+$echo$0
+bash prompt  $ sh
+$ksh   korn shell
+$echo$0
+ksh
+$exit
+
+Feature
+== lump sum commands is executed
+== shell repteadly execute command
+
+shell introduction
+shell script file means  a file which contains a set of commands with in it . If any file contains commands
+than that file can be executable file. Shell scripts can be useful to execute the set of commands at a single moment of time.
+
+use of shells
+1)customizing  your work environment
+2)automating your daily task
+3)executing important system procedure like shutting down the system
+4)performing same operting  on many files
+5)automating repetive task
+
+types of shells
+1)Bourne shell
+2)C shell
+3) Korn shell
+
+The Bourne shell
+The original unix shell is known as sh short for shell or the Bourne shell, named for Steven Bourne, the 
+creator of sh.Bourne shell has been considered a standard part of unix for decades. The shell prompt is $,
+Execution command sh
+
+The C shell
+Designed by Bill Joy at the unversity of California at Berkeley, the C shell was so named much of its syntax parallels that of the C programming language.
+ The shell prompt is % and execution command csh.
+
+The Korn shell
+The Korn shell became one the main salvos in AT&T response to the growing popularity of BSD unix created by
+David Korn at AT&T Bell Laboratories. The Korn shell or ksh , prompt is $ 
+
+Responsbility of shell
+1)program execution
+2)variable and file substitution
+3)I/O redirection
+4)pipeline hookup
+5)enviromental control
+6)interpreted programming language
+
+shell variables
+Variable is data name and it is used to store value. Variable value can be changed during execution of the program
+variables are of two types
+1)system variable
+2)user defined variables
+
+system defined variables
+Environmental variables used to provide information to the programs you use. You can have both global 
+environment and local shell variables . Global environment variables are set by your login shell and new programs and shells inherit the environment of their parent 
+shell
+
+some common ones are 
+1)display the graphical display to use
+2)editor the path to your default editor
+3) group your login group
+4) Home path to your home directory
+5) host the hostname of your system
+6)IFS(internal field seperators(tab   spacebar   enter   etc)
+7)logname the name you login with
+8)path   paths to be searched for commands
+
+$x=33  press enter
+$echo $x  press enter
+output 33
+
+$echo $0
+output /bin/bash
+$ksh press enter
+echo $0 press enter
+output ksh
+$echo $x
+so it is not possible to use because where it is declared their only we can use.
+
+$export x     to make global
+$echo $x  press enter
+output 33
+$echo $0    press enter
+/bin/bash
+$ksh  press enter
+$echo $x
+output 33
+$exit  press enter    to come out of it
+
+shell keywords
+echo
+case
+while
+if
+wait
+do
+read
+done
+ulimit
+set
+shift
+break
+exit
+unset
+exec
+umask
+until
+continue
+trap
+read only
+
+shell scripts are of two types interactive and non interactive shell script. Interactive means input 
+required from user at execution time and non interactive means just opposite.
+
+$pwd
+$ls
+1st shell program
+$vi myscript.sh
+#it is my first script
+echo "welcome to the world of shell scripting"
+echo "default script is bash"
+echo Thank you!
+:wq
+
+$sh myscript.sh
+
+2nd shell program
+$vi users1.sh
+#Number of users
+echo currently logged in users are who | wc -l
+echo currently logged in users are who -q
+echo logged in users count is users | wc -
+echo success
+
+:wq
+
+$ sh users1.sh
+
+
+3rd shell program
+$ vi files.sh
+# Number of files
+echo "number of files in the current directory"
+ls | wc -l
+echo "are existed"
+#display the domain name 
+hostname -d
+#display IP address
+hostname -i
+#display current week number
+date +%u
+#display linux flavor name
+uname -s
+#display name of the processor
+uname -p
+#display date in yyyy/mm/dd
+date +%F
+#diplay day number in a year
+cal -j
+echo all commands successfully compiled
+press esc
+:wq
+$ sh files.sh    (this command is for execution of the shell )
+
+
+4th shell program
+$ vi noextension
+#script without .sh extension
+echo "welcome BASH shell programming"
+echo "Thank u"
+press esc key
+:wq press enter
+$ sh noextension
+
+
+5th shell program (interactive shell script type)
+$ vi read1.sh
+#reading your name
+echo -n  "enter your name"
+read name
+echo you entered Mr/Ms $name
+:wq
+$sh read1.sh
+Enter your name rajesh
+you entered mr/Ms rajesh
+
+
+6th shell program (interactive shell script type)
+$ vi add.sh
+#reading any two numbers
+echo -n "enter any number
+read num1
+echo -n "enter any number"
+read num2
+echo entered numbers are : $num1 $num2
+
+:wq
+$sh add.sh
+
+Entered numbers are : 5  6
+----------------------------------------------------
+$a=200
+$b=300
+$echo $a+$b
+200+300
+$echo $[a+b]
+500
+
+$ vi read2.sh
+#Arithematic opertions
+echo -n "enter any number"
+read fno
+echo -n "enter any number"
+read sno
+echo "sum of two number is : "  echo $(($fno+$sno))
+echo "Diff of two number is : " echo $(($fno-$sno))
+echo "product of two number is : " echo $(($fno*$sno))
+
+press esc key
+:wq  press enter
+$ sh read2.sh
+5
+6
+sum of numbers :11
+Diff of two number is : -1
+product of two number is : 30
+
+
+
+
+
+
+
+ 
+
+
+   
